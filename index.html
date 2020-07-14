@@ -5,11 +5,28 @@
   <meta charset="UTF-8">
   <title>Jaehu Lee</title>
   <link rel="stylesheet" href="./style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    function divrandom() {
+      var divtags = $("div");
+      var prob = Math.random();
+      console.log(prob);
+      if (prob > 0.2) {
+        $(divtags[0]).hide(); // hode hello
+      }
+      else {
+        $(divtags[1]).hide(); // particles
+        $(divtags[2]).hide(); // hello
+      }
+    }
+  </script>
 </head>
 
 <body>
 
-  <body>
+  <body onload="divrandom()">
+    <div><img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Trollface_non-free.png" alt="troll"></div>
     <div id="particles-js">
       <div class="banner-area">
         <h2>I am <span style="color:#40e0d0;">Jaehu Lee</span><br><br><br></h2>
